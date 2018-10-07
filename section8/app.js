@@ -1,0 +1,20 @@
+let hallo = function(who){
+    console.log("Hallo " + who());
+};
+let getName = function(){
+    return "Welt";
+};
+
+hallo(getName);
+
+hallo (function () {
+    return "node.js";
+});
+
+let hy = function (w) {
+  w("Hallo Welt!");
+};
+   
+hy(function (xyz) {
+    console.log(xyz);
+});
