@@ -1,15 +1,5 @@
-let logGreeting1 = function () {
-    console.log("Hallo 1");
-};
+const data = require("./hallo.js");
 
-let logGreeting2 = function () {
-    console.log("Hallo 2");
-};
+console.log(data.name("Hallo "));
 
-let logGreeting3 = function () {
-    console.log("Hallo 3");
-};
-
-logGreeting1();
-setTimeout(logGreeting2, 1000);
-logGreeting3();
+require("./unterordner/");
